@@ -6,13 +6,14 @@ use App\Models\Tour;
 use Illuminate\Database\Eloquent\Model;
 use Cviebrock\EloquentSluggable\Sluggable;
 use Illuminate\Database\Eloquent\Casts\Attributes;
+use Illuminate\Database\Eloquent\Concerns\HasUuids;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use League\CommonMark\Extension\Attributes\Node\Attributes;
 
 class Travel extends Model
 {
-    use HasFactory, Sluggable;
+    use HasFactory, Sluggable, HasUuids;
 
     protected $table = "travels";
     protected $fillable = [
