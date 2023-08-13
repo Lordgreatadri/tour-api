@@ -185,4 +185,10 @@ return [
         // 'Example' => App\Facades\Example::class,
     ])->toArray(),
 
+
+    'paginationPerPage' => [
+        'tours' => 15,
+        'travels'  => 15,
+    ],
+
 ];

@@ -11,9 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
+        Schema::defaultStringLength(191);
+        
         Schema::create('travels', function (Blueprint $table) {
             $table->uuid('id')->primary();
-            $table->boolean('is_pubic')->default(false);
+            $table->boolean('is_public')->default(false);
             $table->string('slug')->unique();
             $table->string('name');
             $table->text('description');

@@ -9,7 +9,7 @@ use Illuminate\Database\Eloquent\Casts\Attributes;
 use Illuminate\Database\Eloquent\Concerns\HasUuids;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use League\CommonMark\Extension\Attributes\Node\Attributes;
+// use League\CommonMark\Extension\Attributes\Node\Attributes;
 
 class Travel extends Model
 {
@@ -17,7 +17,7 @@ class Travel extends Model
 
     protected $table = "travels";
     protected $fillable = [
-        'is_pubic',
+        'is_public',
         'slug',
         'name',
         'description',
