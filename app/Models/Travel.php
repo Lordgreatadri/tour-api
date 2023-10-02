@@ -48,4 +48,9 @@ class Travel extends Model
     public function getNumberOfNightsAttributes() {
         return $this->number_of_days - 1;
     }
+
+
+    public function getRoutKeyName() {
+        return "slug";
+    }
 }
